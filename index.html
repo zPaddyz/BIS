@@ -1,19 +1,53 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<title> Hello World</title>	
-	</head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS.css">
+</head>
 <body>
-	<h1> Hej og velkommen til vores webshop</h1>
-	
-	</body>
 
+<div class="topnav" id="myTopnav">
 
+  <a href="#home" class="active">Nyheder</a>
 
+  <a href="#contact">Armbånd</a>
 
+    <div class="dropdown">
 
+    <button class="dropbtn">Halskæder og Vedhæng
+      <i class="fa fa-caret-down"></i>
+    </button>
 
+    <div class="dropdown-content">
+      <a href="#">Guld halskæde</a>
+      <a href="#">Sølv halskæde</a>
+      <a href="#">Vedhæng</a>
+    </div>
+
+  <div class="dropdown">
+
+    <button class="dropbtn">Ringe
+      <i class="fa fa-caret-down"></i>
+    </button>
+
+    <div class="dropdown-content">
+      <a href="#">Vielsesringe</a>
+      <a href="#">Forlovelsesringe</a>
+      <a href="#">Guld Ringe</a>
+        <a href="#">Sølv Ringe</a>
+    </div>
+
+  </div>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>Responsive Topnav with Dropdown</h2>
+  <p>Resize the browser window to see how it works.</p>
+  <p>Hover over the dropdown button to open the dropdown menu.</p>
+</div>
+
+<script src="Topnav.js"></script>
+
+</body>
 </html>
