@@ -7,13 +7,25 @@
 <body>
 
 <div class="topnav" id="myTopnav">
+    <a href="index.html"><img id="icon" src="Images/Hertz%20logo.png"></a>
 
-  <a href="#home" class="active">Nyheder</a>
+<div class="dropdown">
+    <a href="#home" class="active">Nyheder</a>
+    </div>
 
-  <a href="#contact">Armbånd</a>
+<div class="dropdown">
+    <button class="dropbtn">Armbånd
+      <i class="fa fa-caret-down"></i>
+    </button>
 
-    <div class="dropdown">
+    <div class="dropdown-content">
+      <a href="#">Guld Armbånd</a>
+      <a href="#">Sølv Armbånd</a>
+      <a href="#">Flettet Armbånd</a>
+    </div>
+</div>
 
+<div class="dropdown">
     <button class="dropbtn">Halskæder og Vedhæng
       <i class="fa fa-caret-down"></i>
     </button>
@@ -23,9 +35,9 @@
       <a href="#">Sølv halskæde</a>
       <a href="#">Vedhæng</a>
     </div>
+</div>
 
-  <div class="dropdown">
-
+<div class="dropdown">
     <button class="dropbtn">Ringe
       <i class="fa fa-caret-down"></i>
     </button>
@@ -37,8 +49,7 @@
         <a href="#">Sølv Ringe</a>
     </div>
 
-  </div>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
 </div>
 
 <div style="padding-left:16px">
@@ -47,7 +58,6 @@
   <p>Hover over the dropdown button to open the dropdown menu.</p>
 </div>
 
-<script src="Topnav.js"></script>
 
 </body>
 </html>
