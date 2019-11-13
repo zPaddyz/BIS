@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="\CSS.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Filter.css">
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html"><img id="icon" src="\Images\Hertz%20logo.png"></a>
+
+<div class="dropdown">
+    <a href="#home" class="active">Nyheder</a>
+    </div>
+
+<div class="dropdown">
+    <button class="dropbtn">Armbånd
+    </button>
+
+    <div class="dropdown-content">
+      <a href="#">Guld Armbånd</a>
+      <a href="#">Sølv Armbånd</a>
+      <a href="#">Flettet Armbånd</a>
+    </div>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn">Halskæder og Vedhæng
+    </button>
+
+    <div class="dropdown-content">
+      <a href="#">Guld halskæder</a>
+      <a href="#">Sølv halskæder</a>
+      <a href="#">Vedhæng</a>
+    </div>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn">Ringe
+    </button>
+
+    <div class="dropdown-content">
+      <a href="#">Vielsesringe</a>
+      <a href="#">Forlovelsesringe</a>
+      <a href="#">Guld Ringe</a>
+        <a href="#">Sølv Ringe</a>
+    </div>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn" onclick="location.href='https://phertz.dk/'">Om Os
+    </button>
+</div>
+
+<div class="dropdown" style="float:right;">
+    <a href="#Kurv" class="dropbtn"><i class="fa fa-cart-plus" style="font-size:18px; color:beige"></i> Til Kurv
+    </a>
+    </div>
+
+</div>
+
+</head>
+
+
+
+<body>
+
+    <!-- Control buttons -->
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Forlovelsesringe')"> Forlovelsesringe</button>
+  <button class="btn" onclick="filterSelection('Vielsesringe')"> Vielsesringe</button>
+  <button class="btn" onclick="filterSelection('Guld Ringe')"> Guld Ringe</button>
+  <button class="btn" onclick="filterSelection('Sølv Ringe')"> Sølv Ringe</button>
+</div>
+
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+<div class="container">
+  <div class="filterDiv Forlovelsesringe">BMW</div>
+  <div class="filterDiv Vielsesringe">Orange</div>
+  <div class="filterDiv Guld Ringe">Volvo</div>
+  <div class="filterDiv Sølv Ringe">Red</div>
+  <div class="filterDiv cars animals">Mustang</div>
+  <div class="filterDiv colors">Blue</div>
+  <div class="filterDiv animals">Cat</div>
+  <div class="filterDiv animals">Dog</div>
+  <div class="filterDiv fruits">Melon</div>
+  <div class="filterDiv fruits animals">Kiwi</div>
+  <div class="filterDiv fruits">Banana</div>
+  <div class="filterDiv fruits">Lemon</div>
+  <div class="filterDiv animals">Cow</div>
+</div>
+
+
+
+<script src="Filter.js"></script>
+</body>
+</html>
