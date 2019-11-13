@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="\CSS.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/Filter.css">
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html"><img id="icon" src="/Images/Hertz%20logo.png"></a>
+
+<div class="dropdown">
+    <a href="/index.html" class="dropbtn">Nyheder</a>
+    </div>
+
+<div class="dropdown">
+    <button class="dropbtn" onclick="location.href='/Undersider/Armbånd/Armbånd_filter.html'">Armbånd
+    </button>
+
+    <!--<div class="dropdown-content">
+      <a href="#">Guld Armbånd</a>
+      <a href="#">Sølv Armbånd</a>
+      <a href="#">Flettet Armbånd</a>
+    </div>-->
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn"  onclick="location.href='/Undersider/Halskæder_og_Vedhæng/Halskæde_filter.html'">Halskæder og Vedhæng
+    </button>
+
+    <!--<div class="dropdown-content">
+      <a href="#">Guld halskæder</a>
+      <a href="#">Sølv halskæder</a>
+      <a href="#">Vedhæng</a>
+    </div>-->
+</div>
+
+<div class="dropdown active">
+    <button class="dropbtn" onclick="location.href='/Undersider/Ringe/Ringe_filter.html'">Ringe
+    </button>
+
+    <!--<div class="dropdown-content">
+      <a href="#">Vielsesringe</a>
+      <a href="#">Forlovelsesringe</a>
+      <a href="#">Guld Ringe</a>
+        <a href="#">Sølv Ringe</a>
+    </div>-->
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn" onclick="location.href='https://phertz.dk/about/'">Om Os
+    </button>
+</div>
+
+<div class="dropdown" style="float:right;">
+    <a href="#Kurv" class="dropbtn"><i class="fa fa-cart-plus" style="font-size:18px; color:beige"></i> Til Kurv
+    </a>
+    </div>
+
+</div>
+
+</head>
+
+
+
+<body>
+
+    <!-- Control buttons -->
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Guld Ringe')"> Guld Ringe</button>
+  <button class="btn" onclick="filterSelection('Sølv Ringe')"> Sølv Ringe</button>
+  <button class="btn" onclick="filterSelection('Forlovelsesringe')"> Forlovelsesringe</button>
+  <button class="btn" onclick="filterSelection('Vielsesringe')"> Vielsesringe</button>
+</div>
+
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+<div class="container">
+  <div class="filterDiv Guld Ringe"><img src="Guld_ringe/g1.jpg" id="img">Snoet guldring i 14 kt. – kr. 4.900,-
+Kuglering med ovale kugler i 14 kt. guld – kr. 6.600,-
+Facetteret guldring i 14 kt. – kr. 6.500,-
+Slangeskinds præget guldring i 14 kt. – kr. 7.950,-</div>
+
+  <div class="filterDiv Guld Ringe"><img src="Guld_ringe/g2.jpg"  id="img">Babylon ringe i 18 kt. guld med brillanter. Ringene findes i forskellige bredder. <br> - Pris 9.500.-</div>
+
+  <div class="filterDiv Guld Ringe"><img src="Guld_ringe/g3.jpg"  id="img">Zostera, ring i 14 kt. guld med Tahiti perle. <br> - Pris 14.500.-</div>
+
+  <div class="filterDiv Guld Ringe"><img src="Guld_ringe/g4.jpg"  id="img">Alexandria, ring i 18 kt. guld med brillanter, i alt 0,13 ct. Tw. vvs – kr. 13.500,-
+Alexandria, ring i 18 kt. guld med brillanter, i alt 0,26 ct. Tw. vvs – kr. 18.750,-
+Alexandria, ring i 18 kt. guld med en oval sleben diamant 0,38 ct. Tw. vs., samt omkranset af brillanter, i alt 0,30 ct. Tw. vvs. – kr. 41.500,-
+Alexandria, ring i 18 kt. guld med en oval sleben diamant 0,74 ct. Tw. vvs., samt omkranset af brillanter, i alt 0,50 ct. Tw. vvs. – kr. 80.000,-</div>
+
+  <div class="filterDiv Sølv Ringe"><img src="Sølv_ringe/s1.jpg" id="img">Plissé, ring i sølv. <br> - Pris 3.500.- </div>
+
+  <div class="filterDiv Sølv Ringe"><img src="Sølv_ringe/s2.jpg"  id="img">Plissé, ring i sølv.<br> - Pris 2.250.-</div>
+
+  <div class="filterDiv Sølv Ringe"><img src="Sølv_ringe/s3.jpg"  id="img">Plissé, ring i satineret sølv.<br> - Pris 1.800.-</div>
+
+  <div class="filterDiv Sølv Ringe"><img src="Sølv_ringe/s4.jpg"  id="img">Exclusively ring “stor” i sølv – kr. 2.150,-
+Exclusively ring “lille” i sølv – kr. 1.750,-
+Designet af Helle Damkjær.</div>
+
+    <div class="filterDiv Forlovelsesringe"><img src="Forlovelsesringe/f1.jpg"  id="img"> Solitaire ringe i 18 kt. guld eller hvidguld. Ringene kan produceres med alle størrelser og kvaliteter brillanter.<br>Pris fra 9.050 ,- for 0,10 carat TW.SI</div>
+
+    <div class="filterDiv Forlovelsesringe"><img src="Forlovelsesringe/f2.jpg"  id="img"> Alliancering, 14 kt. hvidguld med 5 stk. brillanter 0,10 ct. TW.VVS. – kr. 19.000,- <br>3 stens ring, 14 kt. hvidguld med i alt 0,91 ct. brillanter TW.VVS. – kr. 39.000,- <br>
+Solitaire ring, 14 kt. hvidguld med 0,98 ct. brillant TW.VS – kr. 71.500,-</div>
+
+    <div class="filterDiv Forlovelsesringe"><img src="Forlovelsesringe/f3.jpg"  id="img">Bubble, ring i 14 kt. guld med en brillantsleben diamant, i alt 0,02 ct. tw.vvs. <br> - Pris 2.500.-</div>
+
+    <div class="filterDiv Forlovelsesringe"><img src="Forlovelsesringe/f4.jpg"  id="img"> Rawplicity ringe i 14 kt. guld eller 14 kt. hvidguld med rosenslebne diamanter, total carat 0,40 ct. Ringene fåes enten med rørfatninger eller greb-fatninger <br> - Pris 11.500.-</div>
+
+<div class="filterDiv Vielsesringe"><img src="Vielsesringe/v1.jpg"  id="img">Damering i 14 kt. hamret guld med en rosensleben diamant 0,52 ct. W. si – kr. 22.500,- <br> Herrering i 14 kt. hamret guld – kr. 9.000,-</div>
+
+<div class="filterDiv Vielsesringe"><img src="Vielsesringe/v2.jpg"  id="img"> Alexandria ring i 14 kt. hvidguld med brillanter i alt 0,13 ct. Tw. vvs. – kr. 13.500,- <br>
+Herrering i 14 kt. hvidguld – kr. 8.600,-</div>
+
+<div class="filterDiv Vielsesringe"><img src="Vielsesringe/v3.jpg"  id="img"> Damering i 14 kt. hvidguld med en smaragd sleben diamant 0,33 ct. W. si. omkranset af flere små brillanter, i alt 0,28 ct. W. si. – kr. 19.200,- <br> Herrering i 14 kt. hvidguld – kr. 8.600,-</div>
+
+<div class="filterDiv Vielsesringe"><img src="Vielsesringe/v4.jpg"  id="img"> Damering i 18 kt. guld med brillant 0,16 ct. Tw. vvs. – kr. 13.500,- <br> Herrering i 18 kt. guld – kr. 10.700,-</div>
+
+</div>
+
+
+
+<script src="\Filter.js"></script>
+</body>
+</html>

@@ -13,7 +13,7 @@
 <div class="topnav" id="myTopnav">
     <a href="index.html"><img id="icon" src="Images/Hertz%20logo.png"></a>
 
-<div class="dropdown">
+<div class="dropdown active">
     <a href="#home" class="dropbtn">Nyheder</a>
     </div>
 
@@ -52,7 +52,7 @@
 </div>
 
 <div class="dropdown">
-    <button class="dropbtn" onclick="location.href='https://phertz.dk/'">Om Os
+    <button class="dropbtn" onclick="location.href='https://phertz.dk/about/'">Om Os
     </button>
 </div>
 
@@ -68,26 +68,27 @@
 
 
 <body>
-
+<h>Nyheder i vores sortiment!</h>
 <!-- Slideshow container -->
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
-    <a href="https://phertz.dk/jewelry/babylon-3/"><img src="Images/babylonarmband.jpg" style="width:25%"></a>
+    <a href="https://phertz.dk/jewelry/babylon-3/"><img src="Images/babylonarmband.jpg" id="slImg"></a>
    </div>
 
+
   <div class="mySlides fade">
-   <a href="https://phertz.dk/jewelry/victoria/"><img src="Images/forlovelsesringe.jpg" style="width:25%"></a>
+   <a href="https://phertz.dk/jewelry/victoria/"><img src="Images/forlovelsesringe.jpg" id="slImg"></a>
     </div>
 
   <div class="mySlides fade">
-	  <a href="https://phertz.dk/jewelry/harlekin_oere_roed/"><img src="Images/harlekinoreringe.jpg" style="width:25%"></a>
-    
+	  <a href="https://phertz.dk/jewelry/harlekin_oere_roed/"><img src="Images/harlekinoreringe.jpg" id="slImg"></a>
 	</div>
 
 
 </div>
+
 <br>
 
 
@@ -134,7 +135,7 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 1800); 
+  setTimeout(showSlides, 3500);
 }
 	</script>
 
