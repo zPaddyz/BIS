@@ -5,7 +5,7 @@
 <head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link rel="stylesheet" href="Slideshow.css">
 <link rel="stylesheet" href="CSS.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -69,17 +69,60 @@
 
 <body>
 
-<div style="padding-left:16px">
-  <h2>To Do List</h2>
-<ul>
-    <li> Slideshow i nyheder for at vise nye produkter</li>
-    <li> Søgebar i navbar?</li>
-    <li> Indkøbskurv</li>
-    <li> Masse undersider med diverse smykker</li>
-    <li> Checkout</li>
-</ul>
-  <p>"Ka-chow!" - Lightning McQueen</p>
-</div>
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <a href="https://phertz.dk/jewelry/babylon-3/"><img src="Images/babylonarmband.jpg" style="width:25%"></a>
+   </div>
+
+  <div class="mySlides fade">
+   <a href="https://phertz.dk/jewelry/victoria/"><img src="Images/forlovelsesringe.jpg" style="width:25%"></a>
+    </div>
+
+  <div class="mySlides fade">
+	  <a href="https://phertz.dk/jewelry/harlekin_oere_roed/"><img src="Images/harlekinoreringe.jpg" style="width:25%"></a>
+    
+	</div>
+
+
+</div>
+<br>
+<script>
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+
+  }
+  slides[slideIndex-1].style.display = "block";
+  
+}
+	
+	var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 1800); 
+}
+	</script>
+
+	
 </body>
 </html>
